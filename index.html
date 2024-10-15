@@ -1,52 +1,32 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <h1> hahahaha may thg chim teo</h1>
-    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/458936532_500711452774336_1408530885095038503_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=8NOIS-JtJrcQ7kNvgFrmDwe&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AakAygi3DaXyFNta0e74tYA&oh=03_Q7cD1QGr51JUOxBteNimWUieRiCYy6tz_uPpJLt1YP7Q4mfIzQ&oe=6734A1F1" alt="" width="200" height="200">
-    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/453371434_465269039662378_6591163714015210806_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=FC8nbG-6ni4Q7kNvgGqDPaG&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=A08XEG5XudkpBUx5tmL66Fe&oh=03_Q7cD1QEX2tW8HmVH-2MXSLLaAnhrplr3wNWNCfhbMSkyna_BTA&oe=6734B38D" alt="" width="200" height="200">
-    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/456100281_8346235228766739_2881034322104557770_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=g3hV2wztMl4Q7kNvgGaSPFS&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=ADkojKvOzNRn7CH_PYZU-7m&oh=03_Q7cD1QEotMuTOtd20F8CMAxChXZpNX8v4-n250WYYfDwak-MRQ&oe=6734B32E" alt="" width="200" height="200">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icon Rơi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Chỉnh sửa kiểu chữ</title>
     <style>
         body {
-            background-image: url('https://s.yimg.com/zb/imgv1/bd9dd5ac-14ee-3082-a39d-c55d5e082ab4/t_500x300'); /* Thay đổi URL này thành link của hình ảnh bạn muốn */
-            background-size: cover; /* Để hình ảnh bao phủ toàn bộ màn hình */
-            background-repeat: no-repeat; /* Không lặp lại hình ảnh */
-            height: 100vh; /* Chiều cao toàn bộ màn hình */
-            margin: 0; /* Bỏ margin mặc định */
+            font-family: 'Pacifico', sans-serif;
+            font-size: 16px;
+            color: #333;
         }
-        .icon {
-            position: absolute;
-            font-size: 50px;
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007BFF; /* Màu xa   nh */
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 0.5px; /* Khoảng cách giữa các chữ */
         }
     </style>
 </head>
 <body>
-
-<script>
-    function createFallingIcon() {
-        const icon = document.createElement('div');
-        icon.className = 'icon';
-        icon.innerText = '💩';
-        icon.style.left = Math.random() * window.innerWidth + 'px';
-        icon.style.top = '0px';
-        
-        document.body.appendChild(icon);
-
-        let fallInterval = setInterval(() => {
-            let top = parseFloat(icon.style.top);
-            if (top < window.innerHeight) {
-                icon.style.top = (top + 5) + 'px';
-            } else {
-                clearInterval(fallInterval);
-                document.body.removeChild(icon);
-            }
-        }, 100);
-    }
-
-    setInterval(createFallingIcon, 500);
-</script>
-
+    <h1>may beo</h1>
+    <p>dit me chung may lu chim teo.</p>
 </body>
 </html>
