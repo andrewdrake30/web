@@ -3,35 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hình ảnh chuyển động theo lắc điện thoại</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Tấm nhựa trong suốt</title>
     <style>
         body {
-            margin: 0;
-            overflow: hidden;
+            background-image: url('https://khoinguonsangtao.vn/wp-content/uploads/2022/08/anh-que-huong-mien-tay-yen-binh.jpg'); /* Đường dẫn đến ảnh */
+            background-size: cover; /* Phủ toàn bộ */
+            background-position: center; /* Căn giữa ảnh */
+            background-repeat: no-repeat; /* Không lặp lại ảnh */
+            height: 100vh; /* Chiều cao toàn bộ màn hình */
+            margin: 0; /* Bỏ margin */
+            color: rgb(194, 29, 29); /* Màu chữ */
+            font-family: 'Pacifico', sans-serif; /* Phông chữ */
+            display: flex; /* Căn giữa nội dung */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
         }
-        #image {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            transition: transform 0.1s;
+    </style>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Màu nền */
+        }
+        .transparent-plastic {
+            width: 300px; /* Chiều rộng */
+            height: 200px; /* Chiều cao */
+            background-color: rgba(240, 238, 238, 0.7); /* Màu trắng với độ trong suốt */
+            border: 1px solid rgba(0, 0, 0, 0.2); /* Viền nhẹ */
+            border-radius: 10px; /* Bo tròn các góc */
+            box-shadow: 0 4px 10px rgba(2, 2, 2, 0.2); /* Đổ bóng */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Pacifico', sans-serif;
         }
     </style>
 </head>
 <body>
-    <img id="image" src="path/to/your/image.jpg" alt="Hình ảnh">
-    <script>
-        window.addEventListener('deviceorientation', function(event) {
-            let x = event.beta;  // X-axis
-            let y = event.gamma; // Y-axis
-            
-            // Chuyển đổi góc độ thành pixel
-            let movementX = y * 2; // Điều chỉnh độ nhạy theo ý muốn
-            let movementY = x * 2; // Điều chỉnh độ nhạy theo ý muốn
-            
-            let image = document.getElementById('image');
-            image.style.transform = `translate(-50%, -50%) translate(${movementX}px, ${-movementY}px)`;
-        });
-    </script>
+    <div class="transparent-plastic">
+        <p>Tấm nhựa trong suốt </p> 
+    </div>
 </body>
 </html>
