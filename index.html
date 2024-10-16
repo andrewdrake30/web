@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Chỉnh sửa kiểu chữ</title>
+    <title>Khối lập phương 3D tương tác</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: 'Pacifico', sans-serif;
-            font-size: 16px;
-            color: #333;
-        }
-        h1 {
-            font-size: 24px;
-            font-weight: bold;
-            color: #007BFF; /* Màu xa   nh */
-        }
-        p {
-            font-size: 14px;
-            line-height: 1.5;
-            letter-spacing: 0.5px; /* Khoảng cách giữa các chữ */
+        body{
+            background-image: url(https://s.yimg.com/zb/imgv1/bd9dd5ac-14ee-3082-a39d-c55d5e082ab4/t_500x300);
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
 <body>
-    <h1>may beo</h1>
-    <p>dit me chung may lu chim teo.</p>
+    <div class="cube-container" id="cube-container">
+        <div class="cube">
+            
+            <div class="face front"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/457497974_1010518087536125_804292346169281010_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=zuOUhElCjLsQ7kNvgErWxYV&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=A60qO3Jeu4E_WteM0tFe4az&oh=03_Q7cD1QEE0Ruxwz7GHkjeofUp7xwWnZNIgnln4TmLnrXDLqIEvg&oe=67372741" alt="" width="200" height="200"></div>
+            <div class="face back"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/458936532_500711452774336_1408530885095038503_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=i2EqrBC0scsQ7kNvgEIa1hb&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=A9JroReUvnGRkD3o8K1QVA0&oh=03_Q7cD1QEZSMGbGUEt3KQk3iexkOiVJtPNzAErw731-q2HOAco_Q&oe=673744F1" alt="" width="200" height="200"></div>
+            <div class="face left"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/457177224_1038248437705117_4628828552221726314_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=x73wjFdoPJgQ7kNvgGfwOks&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=A5-0Z8lOAl9pLDg2O9A30q1&oh=03_Q7cD1QE3GiIjT12G_SSNTv8-qnhI4WAOVjOKmJds_X3HeHQqbA&oe=67375DB4" alt="" width="200" height="200"></div>
+            <div class="face right"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/453371434_465269039662378_6591163714015210806_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=FC8nbG-6ni4Q7kNvgE_SsRg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=A5-0Z8lOAl9pLDg2O9A30q1&oh=03_Q7cD1QEBUSMPbhqUmQWYlS_zO37Gi1Z67yGdkSPblTS5cmORnQ&oe=6737568D" alt="" width="200" height="200"></div>
+            <div class="face top"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/456481684_872912380983687_2095476671366448691_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=IuU6nWS9CSUQ7kNvgHbHvH_&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AMAf6tPGDIKZXZzjPSP4w39&oh=03_Q7cD1QFqYMRJ5S42mI24UqpbZbjL7W_d9MTig7SzoVmNiqFnLQ&oe=6737439A" alt="" width="200" height="200"></div>
+            <div class="face bottom"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/454232362_1528254867800076_7384861672080966924_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=pQnOynH3hDwQ7kNvgHNGkA0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AMAf6tPGDIKZXZzjPSP4w39&oh=03_Q7cD1QHaHC-1YFHYB_G5zs1sC0gXfrNIP4_MWJgfZX0ncVEjmw&oe=67373460" alt="" width="200" height="200"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
